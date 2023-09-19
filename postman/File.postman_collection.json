@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "31206c81-11c2-46aa-b335-6e361df5637c",
+		"name": "File",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1702273",
+		"_collection_link": "https://cloudy-firefly-3301.postman.co/workspace/API-Rest~19195e31-f62a-4caa-8729-bd92f2b2f4c1/collection/1702273-31206c81-11c2-46aa-b335-6e361df5637c?action=share&source=collection_link&creator=1702273"
+	},
+	"item": [
+		{
+			"name": "Upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file\n",
+							"type": "file",
+							"src": "/C:/Users/FiveSoftware3/Desktop/Lorem Ipsum 2.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/files/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"files",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/files/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"files",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Download",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/files/download/Lorem Ipsum 2.pdf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"files",
+						"download",
+						"Lorem Ipsum 2.pdf"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
